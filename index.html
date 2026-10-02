@@ -2,8 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
   <title>SRC Tools</title>
+
+  <meta
+    name="description"
+    content="SRC Tools — simple web tools."
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link
+    rel="canonical"
+    href="https://srctools.example.com/"
+  />
+
+  <!-- Fira Code -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SRC Tools" />
+  <meta
+    property="og:description"
+    content="SRC Tools — simple web tools."
+  />
 
   <style>
     * {
@@ -12,23 +52,60 @@
 
     html,
     body {
-      margin: 0;
       width: 100%;
       height: 100%;
+      margin: 0;
     }
 
     body {
       display: grid;
       place-items: center;
-      font-family: monospace;
+      background: #000;
+      color: #fff;
+      font-family: "Fira Code", monospace;
     }
 
-    .logo {
+    main {
+      text-align: center;
+    }
+
+    .title {
+      margin: 0;
       font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .tag {
+      color: #7ee787;
+    }
+
+    .name {
+      color: #79c0ff;
+    }
+
+    .slash {
+      color: #ffa657;
+    }
+
+    .subtitle {
+      margin-top: 0.75rem;
+      color: #8b949e;
+      font-size: 0.875rem;
+      font-weight: 400;
     }
   </style>
 </head>
+
 <body>
-  <div class="logo">&lt;SRC-Tools/&gt;</div>
+  <main>
+    <h1 class="title">
+      <span class="tag">&lt;</span><span class="name">SRC-Tools</span><span class="slash">/&gt;</span>
+    </h1>
+
+    <p class="subtitle">
+      Simple tools for everyday use.
+    </p>
+  </main>
 </body>
 </html>
